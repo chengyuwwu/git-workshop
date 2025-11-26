@@ -1,0 +1,34 @@
+# --- Force text files to use LF (good for macOS/Linux, Git auto handles Windows) ---
+* text=auto eol=lf
+
+# --- Treat images/binary as binary (no diff) ---
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.svg binary
+*.ico binary
+
+# --- Common binary formats ---
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tar binary
+*.7z binary
+*.rar binary
+
+# --- Jupyter Notebook should be treated as text (to allow diff tools like nbdime) ---
+*.ipynb text
+
+# --- Make git diff better for markdown and LaTeX ---
+*.md text
+*.tex text
+
+# --- GitHub linguist hints (optional) ---
+# Ignore vendor files for language statistics
+vendor/** linguist-vendored
+
+# Mark generated files
+*.min.js linguist-generated
+*.min.css linguist-generated
